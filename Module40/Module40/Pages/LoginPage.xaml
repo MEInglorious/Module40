@@ -1,0 +1,29 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Module40.Pages.LoginPage"
+             NavigationPage.HasNavigationBar="False"
+             BackgroundImageSource="HomeBackground.jpg">
+    <ContentPage.Content>
+        <StackLayout>
+            <Label Text="Welcome to MyApp!"
+                BackgroundColor="AntiqueWhite"
+                VerticalOptions="CenterAndExpand" 
+                HorizontalOptions="Center" 
+                FontSize="40"/>
+            <Entry x:Name="PIN"
+                Placeholder="Enter your password"
+                BackgroundColor="AliceBlue"
+                VerticalOptions="Center" 
+                HorizontalOptions="CenterAndExpand"
+                FontSize="Large"/>
+            <Button x:Name="loginButton" 
+                Text="Confirm"
+                BackgroundColor="Yellow"
+                VerticalOptions="CenterAndExpand" 
+                HorizontalOptions="CenterAndExpand"
+                FontSize="Medium"
+                Clicked="Login_Click"/>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>
